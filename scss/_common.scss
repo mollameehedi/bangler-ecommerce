@@ -1,0 +1,56 @@
+
+/* common css start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  a,
+  a:focus,
+  a:hover {
+    text-decoration: none; }
+  
+  ol,
+  ul {
+    list-style: none; }
+  
+  img {
+    vertical-align: middle; }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  ol,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0; }
+  body{
+    font-size: 16px;
+    color: $col-text;
+    line-height: 20px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    background: #f3f5f6;
+  }
+  
+
+  /* common css end */
+
+
+  /* header css start */
+header{
+    background: $col-black;
+    color: white;
+    padding: 10px 0px;
+      a{
+         color: white;
+      }
+      
+  }
+  
+  // header css end

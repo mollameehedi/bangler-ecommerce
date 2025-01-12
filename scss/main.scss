@@ -1,54 +1,6 @@
-// variable
-$primary: #81007f;
-$white:white;
-$black:black;
-$text:#505050;
-$h_col:#232323;
 
-/* common css start  */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-  
-  a,
-  a:focus,
-  a:hover {
-    text-decoration: none; }
-  
-  ol,
-  ul {
-    list-style: none; }
-  
-  img {
-    vertical-align: middle; }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  li,
-  ol,
-  p,
-  ul {
-    margin-top: 0;
-    margin-bottom: 0; }
-  body{
-    font-size: 16px;
-    color: $text;
-    line-height: 20px;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-  }
-  
-/* common css end */
-header{
-  background: $primary;
-  color: white;
-  padding: 10px 0px;
-    a{
-       color: white;
-    }
-}
+
+@import "./variable";
+@import "./mixin";
+@import "./common";
+@import "./style";
