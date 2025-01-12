@@ -34,12 +34,68 @@ body {
   color: #505050;
   line-height: 20px;
   font-family: "Poppins", serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background: #f3f5f6; }
 
 /* common css end */
+/* header css start */
 header {
-  background: #81007f;
+  background: black;
   color: white;
   padding: 10px 0px; }
   header a {
     color: white; }
+
+#search_bar {
+  padding: 5px 0px;
+  box-shadow: 0px 0px 15px #00000030;
+  background: white; }
+  #search_bar img {
+    height: 70px; }
+  #search_bar form {
+    width: 60%;
+    position: relative; }
+    #search_bar form input {
+      width: 100%;
+      color: #505050;
+      border-radius: 5px;
+      line-height: 25px;
+      border: 1px solid #81007f;
+      padding: 10px; }
+    #search_bar form button {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      font-size: 20px;
+      transform: translateY(-50%);
+      height: 40px;
+      width: 65px;
+      background: transparent;
+      border: 0px;
+      text-align: center;
+      color: #505050; }
+  #search_bar ul li {
+    padding-left: 15px; }
+    #search_bar ul li a {
+      color: #232323; }
+
+nav .dropdown .btn {
+  background: #81007f;
+  color: white;
+  width: 100%;
+  text-align: left; }
+  nav .dropdown .btn:hover {
+    color: rgba(255, 255, 255, 0.8); }
+  nav .dropdown .btn i {
+    font-size: 18px;
+    padding-right: 10px; }
+
+nav .navbar-nav {
+  padding-left: 20px; }
+  nav .navbar-nav .nav-item {
+    padding: 0px 15px; }
+    nav .navbar-nav .nav-item .nav-link {
+      color: #505050;
+      font-size: 18px; }
+    nav .navbar-nav .nav-item .active {
+      color: #81007f; }
