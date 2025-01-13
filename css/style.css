@@ -37,10 +37,81 @@ body {
   font-weight: 400;
   background: #f3f5f6; }
 
+.common_card_header {
+  background: transparent;
+  position: relative; }
+  .common_card_header h2 {
+    font-size: 20px;
+    color: #232323;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: "Montserrat", serif; }
+  .common_card_header a {
+    color: #81007f;
+    font-size: 16px; }
+  .common_card_header::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 15%;
+    background: #81007f;
+    left: 15px;
+    bottom: -1px; }
+
+.cbtn {
+  font-size: 14px;
+  background: white;
+  color: #81007f;
+  border: 1px solid #81007f;
+  -webkit-transition: all linear 0.4s 0s;
+  -moz-transition: all linear 0.4s 0s;
+  -o-transition: all linear 0.4s 0s;
+  transition: all linear 0.4s 0s; }
+  .cbtn:hover {
+    color: white;
+    background: #81007f;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s; }
+
+.product_card {
+  padding: 10px;
+  -webkit-transition: all linear 0.4s 0s;
+  -moz-transition: all linear 0.4s 0s;
+  -o-transition: all linear 0.4s 0s;
+  transition: all linear 0.4s 0s; }
+  .product_card::after {
+    content: ''; }
+  .product_card img {
+    width: 100%;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s; }
+  .product_card .product_tittle {
+    padding: 10px; }
+    .product_card .product_tittle p {
+      font-size: 16px;
+      color: #232323;
+      overflow: hidden; }
+      .product_card .product_tittle p:hover {
+        color: #81007f; }
+    .product_card .product_tittle .price {
+      color: #81007f;
+      padding-top: 5px; }
+      .product_card .product_tittle .price del {
+        color: #969696;
+        font-size: 14px; }
+  .product_card:hover {
+    box-shadow: 0px 0px 15px #00000045; }
+    .product_card:hover img {
+      transform: scale(1.05); }
+
 /* common css end */
 /* header css start */
 header {
-  background: black;
+  background: #81007f;
   color: white;
   padding: 10px 0px; }
   header a {
@@ -79,23 +150,54 @@ header {
     #search_bar ul li a {
       color: #232323; }
 
-nav .dropdown .btn {
-  background: #81007f;
-  color: white;
-  width: 100%;
-  text-align: left; }
-  nav .dropdown .btn:hover {
-    color: rgba(255, 255, 255, 0.8); }
-  nav .dropdown .btn i {
-    font-size: 18px;
-    padding-right: 10px; }
+.navbar {
+  padding: 15px 0px; }
+  .navbar .dropdown .btn {
+    background: #81007f;
+    color: white;
+    width: 100%;
+    text-align: left; }
+    .navbar .dropdown .btn:hover {
+      color: rgba(255, 255, 255, 0.8); }
+    .navbar .dropdown .btn i {
+      font-size: 18px;
+      padding-right: 10px; }
+  .navbar .navbar-nav {
+    padding-left: 20px; }
+    .navbar .navbar-nav .nav-item {
+      padding: 0px 15px; }
+      .navbar .navbar-nav .nav-item .nav-link {
+        color: #505050;
+        font-size: 18px; }
+      .navbar .navbar-nav .nav-item .active {
+        color: #81007f; }
 
-nav .navbar-nav {
-  padding-left: 20px; }
-  nav .navbar-nav .nav-item {
-    padding: 0px 15px; }
-    nav .navbar-nav .nav-item .nav-link {
-      color: #505050;
-      font-size: 18px; }
-    nav .navbar-nav .nav-item .active {
-      color: #81007f; }
+#category {
+  padding: 20px 0px; }
+  #category .category_slick {
+    margin: 0px -10px; }
+    #category .category_slick .cargory_card {
+      margin: 0px 10px; }
+      #category .category_slick .cargory_card img {
+        width: 100%; }
+      #category .category_slick .cargory_card a {
+        font-size: 18px;
+        padding: 10px;
+        display: inline-block;
+        color: #232323; }
+        #category .category_slick .cargory_card a:hover {
+          color: #81007f; }
+
+#popular_product {
+  padding: 20px 0px; }
+  #popular_product .pro_banner {
+    flex-basis: 20%;
+    height: 100%; }
+    #popular_product .pro_banner img {
+      width: 100%;
+      height: 100%; }
+  #popular_product .popular_slick {
+    margin: 0px -10px;
+    width: 100%; }
+    #popular_product .popular_slick .slick-slide {
+      margin: 0px 10px !important; }

@@ -37,14 +37,95 @@
     font-weight: 400;
     background: #f3f5f6;
   }
-  
 
+  // section header
+  .common_card_header{
+    background: transparent;
+    position: relative;
+    h2{
+      font-size: 20px;
+      color: $col-h;
+      font-weight: 600;
+      text-transform: capitalize;
+      font-family: "Montserrat", serif;
+     
+    }
+    a{
+      color: $col-primary;
+      font-size: 16px;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 15%;
+      background: $col-primary;
+      left: 15px;
+      bottom: -1px;
+    }
+  }
+
+  .cbtn{
+    font-size: 14px;
+    background:$col-white;
+    color: $col-primary;
+    border:1px solid $col-primary;
+    @include trans(.4s,0s);
+    &:hover{
+      color: $col-white;
+      background: $col-primary;
+      @include trans(.4s,0s);
+    }
+  }
+
+// product card
+  .product_card{
+    padding: 10px;
+    @include trans(.4s,0s);
+    &::after{
+      content: '';
+
+    }
+   
+    img{
+      width: 100%;
+      @include trans(.4s,0s);
+    }
+    .product_tittle{
+      padding: 10px;
+      p{
+        font-size: 16px;
+        color: $col-h;
+        overflow: hidden;
+        &:hover{
+          color: $col-primary;
+        }
+      }
+      .price{
+        color: $col-primary;
+        padding-top: 5px;
+        del{
+          color: rgb(150, 150, 150);
+          font-size: 14px;
+        }
+      }
+    }
+    &:hover{
+      box-shadow: 0px 0px 15px #00000045;
+      img{
+       transform: scale(1.05);
+      }
+    }
+   
+  }
+
+  
   /* common css end */
 
 
   /* header css start */
 header{
-    background: $col-black;
+    background: $col-primary;
     color: white;
     padding: 10px 0px;
       a{
