@@ -50,7 +50,8 @@
 
 
   // navbar css start
-  nav{
+  .navbar {
+    padding: 15px 0px;
     
     .dropdown{
       .btn{
@@ -82,4 +83,58 @@
     }
   }
   // navbar css end
+
+
+
+  // category css end
+  #category{
+  padding: 20px 0px; 
+  .category_slick{
+    margin: 0px -10px;
+    .cargory_card{
+      margin: 0px 10px;
+      img{
+        width: 100%;
+      }
+      a{
+        font-size: 18px;
+        padding: 10px;
+        display: inline-block;
+        color: $col-h;
+        &:hover{
+          color: $col-primary;
+        }
+      }
+    }
+  }
+  }
+
   
+  // category css end
+
+   // Popular Product css start
+  #popular_product{
+  padding: 20px 0px; 
+  .pro_banner{
+    flex-basis: 20%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .popular_slick{
+    margin: 0px -10px;
+    width: 100%;
+    .slick-slide{
+      margin:0px 10px !important;
+    }
+
+  }
+  }
+   // Popular Product css end
+
+
+
+
+  //  footer start here
