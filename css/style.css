@@ -291,6 +291,10 @@ footer {
     font-size: 12px;
     font-weight: 400; }
 
+#shop_page .page-link {
+  color: #e31577;
+  border: 1px solid #e31577; }
+
 #product_details .product_main_detaits {
   color: #505050;
   background: white;
