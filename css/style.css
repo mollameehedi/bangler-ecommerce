@@ -462,3 +462,8 @@ footer {
       display: inline-block;
       font-size: 0px;
       height: 35px; }
+
+#contact h2 {
+  color: #232323;
+  font-weight: 600;
+  padding: 15px 0px; }
