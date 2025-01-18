@@ -11,13 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+
     <link rel="stylesheet" href="css/all.min.css" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Hello, world!</title>
-
+    
   </head>
   <body>
     <header>
@@ -113,7 +116,7 @@
                         <div class="row">                
                             <div class="col-md-12">
                                     <div class="slider-for border">
-                                    <div class="slid_img">
+                                    <div class="slid_img ">
                                         <img class="img-fluid slider_for_img" src="images/Jhola-Gur-E-300x300 - Copy.jpg" alt="">
                                     </div>
                                     <div class="slid_img">
@@ -154,7 +157,10 @@
                             </div>
                         </div>
                     </div>
-                
+                    <!-- <div id="img-container" style="width: 400px">
+                      <img src="https://github.com/malaman/js-image-zoom/blob/master/example/1.jpg?raw=true" />
+                  </div> -->
+                 
         
                 </div>
                 <div class="col-md-6">
@@ -177,17 +183,12 @@
                     </div>
         
                 <!-- TO REMOVE COLORS -->
-                    <div class="d-flex">
-                      <div class="mb-3">
-                        <label for="color" class="form-label">Color:</label>
-                        <select class="form-select" id="color">
-                          <option value="red">Red</option>
-                          <option value="blue">Blue</option>
-                          <option value="green">Green</option>
-                        </select>
+                    <div class="d-flex w-50">
+                      <div class="mb-3 w-50">
+                        <label for="size" class="form-label">Quantity:</label>
+                        <input type="number" class="form-control" value="1">
                       </div>
-              
-                      <div class="mb-3">
+                      <div class="mb-3 w-50">
                         <label for="size" class="form-label">Size:</label>
                         <select class="form-select" id="size">
                           <option value="small">Small</option>
@@ -196,17 +197,15 @@
                         </select>
                       </div>
                     </div>        
-                    <hr>
+                   
                     <div class="row">
-                        <div class="col-md-3">
-                            <input type="number" class="form-control" value="1">
-                        </div>
+                        
                         <div class="col-md-9"><div class="btn-group w-100" role="group" aria-label="Basic example">
                           <button type="button" class="btn cbtn me-1">Buy Now</button>
                           <button type="button" class="btn cbtn ms-1">Add to cart</button>
                         </div></div>
                     </div>
-        
+                    <hr>
                 </div>
             </div>
         </div>
@@ -414,8 +413,30 @@
 
       </script>
   
+  
       <script src="js/slick.min.js"></script>
+      <script src="js/zoomer.js"></script>
       <script src="js/script.js"></script>
+
+      <script>
+                $(document).ready(function(){  
+        var options1 = {
+            width: 400,
+            zoomWidth: 500,
+            offset: {vertical: 0, horizontal: 10}
+        };
+        
+        // If the width and height of the image are not known or to adjust the image to the container of it
+        var options2 = {
+            fillContainer: true,
+            offset: {vertical: 0, horizontal: 10}
+        };
+        let activeSlideImage = document.querySelector('.product-image .slick-active');
+    
+        
+        new ImageZoom(activeSlideImage, options2);
+      });
+        </script>
     </body>
   </html>
   

@@ -5,7 +5,7 @@ $('.category_slick').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows:false,
-    autoplay:false,
+    autoplay:true,
     responsive: [
       {
         breakpoint: 1024,

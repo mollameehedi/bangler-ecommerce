@@ -92,7 +92,11 @@
     margin: 0px -10px;
     .cargory_card{
       margin: 0px 10px;
+      text-align: center;
+      border: 0px !important;
       img{
+        border-radius: 30px;
+        border: 3px solid $col-primary;
         width: 100%;
       }
       a{
@@ -110,7 +114,55 @@
 
   
   // category css end
+#flash_sale_product{
+  .see_all{
+    padding-bottom: 25px;
+    a{
+      text-align: center;
+    color: $col-primary;
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 30px;
+    border: 1px solid $col-primary;
+    border-radius: 25px;
+    @include trans(0.4s,0s);
+    &:hover{
+      background: $col-primary;
+      color: $col-white;
+      @include trans(0.4s,0s);
+    }
+    }
+  }
+  #clockdiv {
+    font-family: sans-serif;
+    color:$col-primary;
+    display: inline-block;
+    text-align: center;
+    font-weight: 100;
+  }
 
+  #clockdiv > div {
+    padding: 10px;
+    border-radius: 3px;
+    background: $col-primary;
+    display: inline-block;
+  }
+
+  #clockdiv div > span {
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: 700;
+    background: white;
+    display: inline-block;
+  }
+
+  .smalltext {
+    padding-top: 5px;
+    font-size: 20px;
+    color: white;
+  }
+}
    // Popular Product css start
   #popular_product{
     padding: 20px 0px; 

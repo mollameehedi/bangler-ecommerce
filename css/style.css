@@ -180,8 +180,12 @@ header {
   #category .category_slick {
     margin: 0px -10px; }
     #category .category_slick .cargory_card {
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      text-align: center;
+      border: 0px !important; }
       #category .category_slick .cargory_card img {
+        border-radius: 30px;
+        border: 3px solid #e31577;
         width: 100%; }
       #category .category_slick .cargory_card a {
         font-size: 18px;
@@ -190,6 +194,54 @@ header {
         color: #232323; }
         #category .category_slick .cargory_card a:hover {
           color: #e31577; }
+
+#flash_sale_product .see_all {
+  padding-bottom: 25px; }
+  #flash_sale_product .see_all a {
+    text-align: center;
+    color: #e31577;
+    display: inline-block;
+    padding: 0px 20px;
+    line-height: 30px;
+    border: 1px solid #e31577;
+    border-radius: 25px;
+    -webkit-transition: all linear 0.4s 0s;
+    -moz-transition: all linear 0.4s 0s;
+    -o-transition: all linear 0.4s 0s;
+    transition: all linear 0.4s 0s; }
+    #flash_sale_product .see_all a:hover {
+      background: #e31577;
+      color: white;
+      -webkit-transition: all linear 0.4s 0s;
+      -moz-transition: all linear 0.4s 0s;
+      -o-transition: all linear 0.4s 0s;
+      transition: all linear 0.4s 0s; }
+
+#flash_sale_product #clockdiv {
+  font-family: sans-serif;
+  color: #e31577;
+  display: inline-block;
+  text-align: center;
+  font-weight: 100; }
+
+#flash_sale_product #clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #e31577;
+  display: inline-block; }
+
+#flash_sale_product #clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 30px;
+  font-weight: 700;
+  background: white;
+  display: inline-block; }
+
+#flash_sale_product .smalltext {
+  padding-top: 5px;
+  font-size: 20px;
+  color: white; }
 
 #popular_product {
   padding: 20px 0px; }
