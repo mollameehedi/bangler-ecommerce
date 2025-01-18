@@ -138,3 +138,13 @@ header{
   }
   
   // header css end
+
+  .breadcrumb{
+    font-size: 18px;
+    color:$col-text ;
+    margin: 0px;
+    padding: 15px 0px;
+   a{
+    color: $col-primary;
+   }
+  }

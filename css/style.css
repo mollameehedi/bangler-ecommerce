@@ -120,6 +120,14 @@ header {
   header a {
     color: white; }
 
+.breadcrumb {
+  font-size: 18px;
+  color: #505050;
+  margin: 0px;
+  padding: 15px 0px; }
+  .breadcrumb a {
+    color: #e31577; }
+
 #search_bar {
   padding: 5px 0px;
   box-shadow: 0px 0px 15px #00000030;
@@ -175,6 +183,10 @@ header {
       .navbar .navbar-nav .nav-item .active {
         color: #e31577; }
 
+.common-banner img {
+  height: 300px;
+  width: 100%; }
+
 #category {
   padding: 20px 0px; }
   #category .category_slick {
@@ -194,6 +206,29 @@ header {
         color: #232323; }
         #category .category_slick .cargory_card a:hover {
           color: #e31577; }
+
+#timer {
+  font-family: sans-serif;
+  color: #e31577;
+  display: inline-block;
+  text-align: center;
+  font-weight: 100; }
+  #timer div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #e31577;
+    display: inline-block; }
+    #timer div span {
+      padding: 15px;
+      border-radius: 3px;
+      font-size: 30px;
+      font-weight: 700;
+      background: white;
+      display: inline-block; }
+    #timer div .smalltext {
+      padding-top: 5px;
+      font-size: 20px;
+      color: white; }
 
 #flash_sale_product .see_all {
   padding-bottom: 25px; }
@@ -216,32 +251,6 @@ header {
       -moz-transition: all linear 0.4s 0s;
       -o-transition: all linear 0.4s 0s;
       transition: all linear 0.4s 0s; }
-
-#flash_sale_product #clockdiv {
-  font-family: sans-serif;
-  color: #e31577;
-  display: inline-block;
-  text-align: center;
-  font-weight: 100; }
-
-#flash_sale_product #clockdiv > div {
-  padding: 10px;
-  border-radius: 3px;
-  background: #e31577;
-  display: inline-block; }
-
-#flash_sale_product #clockdiv div > span {
-  padding: 15px;
-  border-radius: 3px;
-  font-size: 30px;
-  font-weight: 700;
-  background: white;
-  display: inline-block; }
-
-#flash_sale_product .smalltext {
-  padding-top: 5px;
-  font-size: 20px;
-  color: white; }
 
 #popular_product {
   padding: 20px 0px; }

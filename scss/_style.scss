@@ -82,7 +82,12 @@
     }
   }
   // navbar css end
-
+.common-banner{
+  img{
+    height: 300px;
+    width: 100%;
+  }
+}
 
 
   // category css end
@@ -112,7 +117,33 @@
   }
   }
 
-  
+  #timer {
+    font-family: sans-serif;
+    color:$col-primary;
+    display: inline-block;
+    text-align: center;
+    font-weight: 100;
+    div {
+      padding: 10px;
+      border-radius: 3px;
+      background: $col-primary;
+      display: inline-block;
+      span {
+        padding: 15px;
+        border-radius: 3px;
+        font-size: 30px;
+        font-weight: 700;
+        background: white;
+        display: inline-block;
+      }
+      .smalltext {
+        padding-top: 5px;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+
   // category css end
 #flash_sale_product{
   .see_all{
@@ -133,35 +164,10 @@
     }
     }
   }
-  #clockdiv {
-    font-family: sans-serif;
-    color:$col-primary;
-    display: inline-block;
-    text-align: center;
-    font-weight: 100;
-  }
+ 
 
-  #clockdiv > div {
-    padding: 10px;
-    border-radius: 3px;
-    background: $col-primary;
-    display: inline-block;
-  }
 
-  #clockdiv div > span {
-    padding: 15px;
-    border-radius: 3px;
-    font-size: 30px;
-    font-weight: 700;
-    background: white;
-    display: inline-block;
-  }
-
-  .smalltext {
-    padding-top: 5px;
-    font-size: 20px;
-    color: white;
-  }
+  
 }
    // Popular Product css start
   #popular_product{

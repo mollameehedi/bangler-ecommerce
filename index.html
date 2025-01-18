@@ -296,7 +296,7 @@
             class="card-header common_card_header d-flex justify-content-between align-items-center"
           >
             <h2>Flash Sale</h2>
-            <div id="clockdiv">
+            <div id="timer">
               <div>
                 <span class="days"></span>
                 <div class="smalltext">Days</div>
@@ -883,7 +883,7 @@
 
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Jan 17, 2025 19:37:25").getTime();
+      var countDownDate = new Date("Jan 25, 2025 19:37:25").getTime();
   
       // Update the count down every 1 second
       var x = setInterval(function() {
@@ -901,15 +901,15 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
         // Output the result in an element with id="demo"
-        document.getElementById("clockdiv").querySelector(".days").innerHTML = days;
-        document.getElementById("clockdiv").querySelector(".hours").innerHTML = hours;
-        document.getElementById("clockdiv").querySelector(".minutes").innerHTML = minutes;
-        document.getElementById("clockdiv").querySelector(".seconds").innerHTML = seconds;
+        document.getElementById("timer").querySelector(".days").innerHTML = days;
+        document.getElementById("timer").querySelector(".hours").innerHTML = hours;
+        document.getElementById("timer").querySelector(".minutes").innerHTML = minutes;
+        document.getElementById("timer").querySelector(".seconds").innerHTML = seconds;
   
         // If the count down is over, write some text 
         if (distance < 0) {
           clearInterval(x);
-          document.getElementById("clockdiv").innerHTML = "EXPIRED";
+          document.getElementById("timer").innerHTML = "EXPIRED";
         }
       }, 1000);
     </script>
